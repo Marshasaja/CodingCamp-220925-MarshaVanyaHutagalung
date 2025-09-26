@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsha's Site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Marsha's Company</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#profile">Our Profile</a>
+      <a href="#about">About Us</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Message Us</a>
+    </nav>
+  </header>
+  <hr>
+
+  <!-- Banner / Home -->
+  <section id="home" class="banner">
+    <h2>Hi <span id="username">User</span>, Welcome To My Website</h2>
+    <p>This is my first website</p>
+  </section>
+  <hr>
+
+  <!-- Profile -->
+  <section id="profile" class="profile-box">
+    <h2>Our Profile</h2>
+    <p>Website ini lahir pada tahun 2025</p>
+  </section>
+  <hr>
+
+  <!-- Visi Misi & About Us -->
+  <section id="about" class="about-box">
+    <h2>Visi & Misi</h2>
+    <p><strong>Visi:</strong> Stay Healthy</p>
+    <p><strong>Misi:</strong> Stay Alive</p>
+    <hr>
+    <h2>About Us</h2>
+    <p>Terima kasih Revou untuk ilmunya selama satu minggu ini</p>
+  </section>
+  <hr>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio-box">
+    <h2>Portfolio</h2>
+    <p>Berikut beberapa project yang sudah saya kerjakan:</p>
+    <ul>
+      <li>Website ini </li>
+      <li>Website ini </li>
+      <li>Website ini </li>
+    </ul>
+  </section>
+  <hr>
+
+  <!-- Headquarters -->
+  <section class="headquarter">
+    <h2>Our Headquarters</h2>
+    <div class="cities">
+      <div class="city">Jakarta</div>
+      <div class="city">Bandung</div>
+      <div class="city">Surabaya</div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Contact / Message Us -->
+  <section id="contact" class="form-section">
+    <h2>Message Us</h2>
+    <div class="form-container">
+      <!-- Form -->
+      <form id="messageForm">
+        <label>Nama: <input type="text" id="name" required></label><br>
+        <label>Tanggal Lahir: <input type="date" id="dob" required></label><br>
+        <label>Jenis Kelamin: 
+          <select id="gender" required>
+            <option value="">--Pilih--</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </label><br>
+        <label>Pesan: <textarea id="message" required></textarea></label><br>
+        <button type="submit">Kirim</button>
+      </form>
+
+      <!-- Hasil submit -->
+      <div class="result">
+        <h3>Hasil:</h3>
+        <p><strong>Nama:</strong> <span id="resName">-</span></p>
+        <p><strong>Tanggal Lahir:</strong> <span id="resDob">-</span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="resGender">-</span></p>
+        <p><strong>Pesan:</strong> <span id="resMessage">-</span></p>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Marsha Vanya Hutagalung</p>
+  </footer>
+
+  <!-- Panggil JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
